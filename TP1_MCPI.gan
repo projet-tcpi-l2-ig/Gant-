@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="MCPI_TP1" company="GEEKS" webLink="http://" view-date="2025-05-10" view-index="0" gantt-divider-location="375" resource-divider-location="517" version="3.3.3300" locale="fr_FR">
+    <description><![CDATA[DIAGRAMME DE GANT  TP 1 POUR UN PROJET DE DEVELOPPEMENT D'UNE APPLICATION ]]></description>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd15" name="Notes" width="20" order="0"/>
+        <field id="tpd2" name="Alertes" width="-1" order="1"/>
+        <field id="tpd14" name="Nouvelle tâche" width="20" order="2"/>
+        <field id="tpd3" name="Nom" width="32" order="0"/>
+        <field id="tpd4" name="Date de début" width="29" order="1"/>
+        <field id="tpd5" name="Date de fin" width="29" order="2"/>
+        <field id="tpd7" name="Avancée" width="29" order="3"/>
+        <field id="tpd12" name="Coût" width="29" order="4"/>
+        <field id="tpd6" name="Durée" width="29" order="5"/>
+        <field id="tpd10" name="ID" width="29" order="6"/>
+        <field id="tpd11" name="Numéro hiérarchique" width="29" order="7"/>
+        <field id="tpd1" name="Priorité" width="29" order="8"/>
+        <field id="tpd9" name="Prédécesseurs" width="54" order="9"/>
+        <field id="tpd8" name="Responsable" width="56" order="10"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="coordinator"/>
+        <option id="taskLabelLeft" value="resources"/>
+        <option id="taskLabelRight" value="length"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#990000 #ccffff #ffff00 #990099 #333333 #3333ff #ff0000 #00ff00]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="319" order="0"/>
+        <field id="1" name="Rôle par défaut" width="195" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="8" uid="1f11de487ed34228ae87d5c041112fb9" name="creation de cahier de charge" meeting="false" start="2025-05-13" duration="1" complete="0" thirdDate="2025-05-13" thirdDate-constraint="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="310afa93842347c0abf053213afb8391" name="Recherche et analyse" color="#ff0000" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2025-05-14" duration="7" complete="0" thirdDate="2025-05-14" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="9dee5d3ba97048d8a3bb962a14b1a15e" name="Graphiste" color="#3333ff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2025-05-23" duration="14" complete="0" thirdDate="2025-05-14" thirdDate-constraint="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="2da45af26f884fefa63614369cc13bb3" name="Developpement" color="#990099" shape="1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0" meeting="false" start="2025-06-12" duration="28" complete="0" thirdDate="2025-05-14" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="7e9623b963d248c391421e91708c937b" name="Tests" color="#ffff00" shape="0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,1" meeting="false" start="2025-07-22" duration="7" complete="0" thirdDate="2025-05-14" thirdDate-constraint="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="6596226dd4234b49a11e5c57abb6be00" name="Lancement" color="#990000" shape="0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0" meeting="false" start="2025-07-31" duration="7" complete="0" thirdDate="2025-05-14" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="EHOTA SELEMANI" function="Default:1" contacts="theopholeselemani303@gmail.com" phone="+243971757351"/>
+        <resource id="1" name="ANGISHA MIGABO Blaise" function="SoftwareDevelopment:2" contacts="bamkcir@gmail.com" phone="+243972313156"/>
+        <resource id="2" name="BIRINDWA BIRINGINGWA Berckys" function="SoftwareDevelopment:5" contacts="beckysj@gmail.com" phone="+243972727484"/>
+        <resource id="3" name="CIKURU CIRIMWAMI Joslin" function="SoftwareDevelopment:4" contacts="cirimwamijoslin06@gmail.com" phone="+243970031984"/>
+        <resource id="4" name="MWANGAZA MUGISHO Huguette" function="5" contacts="mwangazamugisho@gmail.com" phone="+243975806792"/>
+        <resource id="5" name="EHOTA SELEMANI Theophile" function="SoftwareDevelopment:8" contacts="theophileselenani303@gmail.com" phone="+243971757351"/>
+        <resource id="6" name="NASINDO LWABOSHI Emilienne" function="SoftwareDevelopment:2" contacts="" phone="+243893184819"/>
+        <resource id="7" name="AMINA MUBALAMA Anite" function="SoftwareDevelopment:5" contacts="aminamubalamaanite@gmail.com" phone="+243994320490"/>
+        <resource id="8" name="NURU ALICE" function="5" contacts="" phone="+243902911482"/>
+        <resource id="9" name="BANTU BINTU NTAMWIRA " function="5" contacts="wivinentamwira@gmail.com" phone="+243973621865"/>
+        <resource id="10" name="ASHUZA BISIMWA Elysee" function="SoftwareDevelopment:8" contacts="elyseeashuzabisimwa@gmail.com" phone="+243854992179"/>
+    </resources>
+    <allocations>
+        <allocation task-id="8" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="2" function="SoftwareDevelopment:5" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="SoftwareDevelopment:4" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="4" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="5" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="6" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="7" function="SoftwareDevelopment:5" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="8" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="9" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="10" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+    <roles>
+        <role id="1" name="Developpeur"/>
+        <role id="2" name="Graphiste"/>
+        <role id="3" name="Analyste"/>
+        <role id="4" name="Equipe de test"/>
+        <role id="5" name="Equipe de lancement"/>
+    </roles>
+</project>
